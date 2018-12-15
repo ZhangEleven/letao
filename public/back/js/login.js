@@ -23,7 +23,7 @@ $(function() {
                         message:'用户名长度必须在2~6位之间'
                     },
                     callback:{
-                        message:'用户名错误!'
+                        message:'用户名不存在!'
                     }
 
                 }
