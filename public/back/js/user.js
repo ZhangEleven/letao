@@ -1,4 +1,4 @@
-import { ftruncateSync } from "fs";
+
 
 // 分页
 $(function() {
