@@ -42,12 +42,44 @@ $(function() {
       }
     })
   }
-})
+  
+  // 禁用模态框
+  // 事件委托
+  $('tbody').on('click','.btn',function(){
+    // console.log('xuxuxu');
+    $('#userModal').modal('show')
+  
+    // 获取id
+    currentId = $(this).parent().data('id')
+    isDelete = $(this).hasClass('btn-danger') ? 0 : 1
+  
+  })
+  
+  $('#submitBtn').click (function(){
+    
+    $.ajax({
+      type:'post',
+      url:'/user/updateUser',
+      data:{
+        id : currentId,
+        isDelete : isDelete
+      },
+      success:function(e){
+        // console.log('e')
+        if(e.success){
+          $('#userModal').modal('hide')
+          render()
+        }
+        
+      }
+    })
+  
+  }) 
+  
+
+})  
 
 
 
-// 禁用模态框
-// 事件委托
-// $('tbody').on('click','btn',function(){
-//   $('#userModal').modal('show');
-// })
+
+
