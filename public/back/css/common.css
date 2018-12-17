@@ -1,3 +1,9 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -10,8 +16,6 @@ a:active {
 }
 
 ul{
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
@@ -19,6 +23,17 @@ ul{
     color: #A94442;
 }
 
+/* 表格居中 */
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+
+/* 侧边栏 */
 .lt_aside{
     position: fixed;
     top: 0;
@@ -90,7 +105,7 @@ ul{
     display: none;
   }
   .lt_aside .nav .child a {
-    padding-left: 40px;
+    padding-left: 62px;
   }
 
 
@@ -113,6 +128,7 @@ ul{
       left: 0;
       top: 0;
       padding-left: 180px;
+      z-index: 998;
       transition: all 1s;
   }
   

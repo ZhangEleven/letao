@@ -51,7 +51,7 @@ $(function() {
     legend: {
       orient: 'vertical',
       left: 'left',
-      data: ['耐克','阿迪','阿迪王','老北京','老奶奶']
+      data: ['蒂芙尼','ck','宝格丽','Boy','AJ']
     },
   
     series : [
@@ -61,11 +61,11 @@ $(function() {
         radius : '55%', 
         center: ['50%', '60%'], 
         data:[
-          {value:335, name:'耐克'},
-          {value:310, name:'阿迪'},
-          {value:234, name:'阿迪王'},
-          {value:135, name:'老北京'},
-          {value:1548, name:'老奶奶'}
+          {value:310, name:'蒂芙尼'},
+          {value:234, name:'ck'},
+          {value:135, name:'宝格丽'},
+          {value:335, name:'Boy'},
+          {value:1548, name:'AJ'},
         ],
       
       }
