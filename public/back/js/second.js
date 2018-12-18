@@ -66,7 +66,7 @@ $(function() {
     $('[name = "categoryId"]').val(id)
 
     // 更新隐藏域的校验状态
-    // $("#form").data("bootstrapValidator").updateStatus("categoryId", "VALID")
+    $("#form").data("bootstrapValidator").updateStatus("categoryId", "VALID")
   })
 
   //  调用fileupload方法完成文件上传初始化
@@ -80,7 +80,7 @@ $(function() {
       // 设置给img的src属性
       $("#imgBox img").attr("src", picUrl)
       $('[name ="brandLogo"]').val(picUrl)
-      // $('#form').data("bootstrapValidator").updateStatus("brandLogo", "VALID");
+      $('#form').data("bootstrapValidator").updateStatus("brandLogo", "VALID");
     }
   })
 
