@@ -1,0 +1,9 @@
+.lt_nav ul {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.lt_nav ul li {
+    float: left;
+    width: 33.33%;
+}
